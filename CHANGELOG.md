@@ -2,6 +2,9 @@
 
 See also [the FreshRSS releases](https://github.com/FreshRSS/FreshRSS/releases).
 
+## 202X-XX-XX FreshRSS 1.28.1
+
+
 ## 2025-12-24 FreshRSS 1.28.0
 
 * Features
