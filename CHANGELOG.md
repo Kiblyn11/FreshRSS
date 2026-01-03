@@ -2,11 +2,12 @@
 
 See also [the FreshRSS releases](https://github.com/FreshRSS/FreshRSS/releases).
 
-## 2026-01-XX FreshRSS 1.28.1
+## 2026-01-XX FreshRSS 1.28.1-dev
 
 * Features
 	* Handle Web scraping of `text/plain` as `<pre class="text-plain">` [#8340](https://github.com/FreshRSS/FreshRSS/pull/8340)
 * Bug fixing
+	* Fix unwanted expansion of user queries (saved searches) applied to filters [#8395](https://github.com/FreshRSS/FreshRSS/pull/8395)
 	* Fix encoding of filter actions for labels [#8368](https://github.com/FreshRSS/FreshRSS/pull/8368)
 	* Auto-add `lastUserModified` database column also during mark-as-read action [#8346](https://github.com/FreshRSS/FreshRSS/pull/8346)
 	* Do not include hidden feeds when counting unread articles in categories [#8357](https://github.com/FreshRSS/FreshRSS/pull/8357)
@@ -14,7 +15,11 @@ See also [the FreshRSS releases](https://github.com/FreshRSS/FreshRSS/releases).
 	* Disable counting articles in user labels for Ajax requests (unused) [#8352](https://github.com/FreshRSS/FreshRSS/pull/8352)
 * Security
 	* Change `Content-Disposition: inline` to `attachment` in `f.php` [#8344](https://github.com/FreshRSS/FreshRSS/pull/8344)
-	* Fix Path Traversal vulnerability in `UserDAO` methods (`exists`, `mtime`, `ctime`) [GHSA-p8fh-pp43-9372](https://github.com/FreshRSS/FreshRSS/security/advisories/GHSA-p8fh-pp43-9372)
+	* Hardened user methods `exists`, `mtime`, `ctime` [#26c1102](https://github.com/FreshRSS/FreshRSS/commit/26c1102567c095b051b5e1a0aedb45b78713c283)
+* Deployment
+	* Add username in Apache access logs (also in Docker logs): for GReader API, and for HTTP Basic Auth from reverse proxy [#8392](https://github.com/FreshRSS/FreshRSS/pull/8392)
+* SimplePie
+	* Update of `CURLOPT_ACCEPT_ENCODING` [#8376](https://github.com/FreshRSS/FreshRSS/pull/8376), [simplepie#960](https://github.com/simplepie/simplepie/pull/960), [simplepie#962](https://github.com/simplepie/simplepie/pull/962)
 * Extensions
 	* Update `.gitignore` to ignore installed extensions [#8372](https://github.com/FreshRSS/FreshRSS/pull/8372)
 * Misc.
