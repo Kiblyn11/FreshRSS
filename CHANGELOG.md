@@ -14,6 +14,7 @@ See also [the FreshRSS releases](https://github.com/FreshRSS/FreshRSS/releases).
 	* Disable counting articles in user labels for Ajax requests (unused) [#8352](https://github.com/FreshRSS/FreshRSS/pull/8352)
 * Security
 	* Change `Content-Disposition: inline` to `attachment` in `f.php` [#8344](https://github.com/FreshRSS/FreshRSS/pull/8344)
+	* Fix Path Traversal vulnerability in `UserDAO` methods (`exists`, `mtime`, `ctime`) [GHSA-p8fh-pp43-9372](https://github.com/FreshRSS/FreshRSS/security/advisories/GHSA-p8fh-pp43-9372)
 * Extensions
 	* Update `.gitignore` to ignore installed extensions [#8372](https://github.com/FreshRSS/FreshRSS/pull/8372)
 * Misc.
