@@ -9,7 +9,10 @@ See also [the FreshRSS releases](https://github.com/FreshRSS/FreshRSS/releases).
 * Bug fixing
 	* Fix unwanted expansion of user queries (saved searches) applied to filters [#8395](https://github.com/FreshRSS/FreshRSS/pull/8395)
 	* Fix encoding of filter actions for labels [#8368](https://github.com/FreshRSS/FreshRSS/pull/8368)
+	* Fix searching of tags [#8425](https://github.com/FreshRSS/FreshRSS/pull/8425)
 	* Fix refreshing feeds with token while anonymous refresh is disabled [#8371](https://github.com/FreshRSS/FreshRSS/pull/8371)
+	* Fix RSS and OPML access by token [#8434](https://github.com/FreshRSS/FreshRSS/pull/8434)
+	* Fix MySQL/MariaDB `transliterator_transliterate` fallback (when the `php-intl` extension is unavailable) [#8427](https://github.com/FreshRSS/FreshRSS/pull/8427)
 	* Auto-add `lastUserModified` database column also during mark-as-read action [#8346](https://github.com/FreshRSS/FreshRSS/pull/8346)
 	* Do not include hidden feeds when counting unread articles in categories [#8357](https://github.com/FreshRSS/FreshRSS/pull/8357)
 	* Remove wrong PHP deprecation of OPML export action [#8399](https://github.com/FreshRSS/FreshRSS/pull/8399)
@@ -26,6 +29,7 @@ See also [the FreshRSS releases](https://github.com/FreshRSS/FreshRSS/releases).
 	* Update `.gitignore` to ignore installed extensions [#8372](https://github.com/FreshRSS/FreshRSS/pull/8372)
 * UI
 	* Add `data-category="3"` to ease custom CSS styling of articles [#8397](https://github.com/FreshRSS/FreshRSS/pull/8397)
+	* Fix space between 'By:' and the author name [#8422](https://github.com/FreshRSS/FreshRSS/pull/8422)
 * I18n
 	* Improve Dutch [#8403](https://github.com/FreshRSS/FreshRSS/pull/8403)
 	* Improve German [#8402](https://github.com/FreshRSS/FreshRSS/pull/8402)
